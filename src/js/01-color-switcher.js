@@ -1,3 +1,4 @@
+
 const startBtn = document.querySelector('button[data-start]');
 const stopBtn = document.querySelector('button[data-stop]');
 const COLOR_DELAY = 1000;
@@ -29,3 +30,18 @@ startBtn.addEventListener('click', () => {
     clearInterval(changeColor);
   });
 });
+
+// let timerId = null;
+
+// startBtn.addEventListener('click', () => {
+//   startBtn.disabled = true;
+//   timerId = setInterval(() => {
+//     document.body.style.backgroundColor = getRandomHexColor();
+//   }, COLOR_DELAY);
+// });
+
+// stopBtn.addEventListener('click', () => {
+//   clearInterval(timerId);
+//   startBtn.disabled = false;
+//   document.body.style.backgroundColor = '';
+// });
